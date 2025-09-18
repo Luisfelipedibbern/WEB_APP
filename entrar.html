@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechLMR · Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="auth-wrap">
+    <section class="auth-box">
+      <div class="logo">Tech<span>LMR</span></div>
+      <h1 class="auth-title">Bem-vindo de volta</h1>
+      <p class="auth-sub">Entre para acessar as ofertas exclusivas</p>
+      <form class="form" id="login" action="login.php" method="POST" autocomplete="off">
+        <input class="input border" type="email" name="email" placeholder="Seu e-mail" required>
+        <input class="input border" type="password" name="senha" placeholder="Sua senha" required>
+        <button class="btn btn-primary" type="submit">Entrar</button>
+        <a href="esqueceu.html">Esqueceu a senha?</a>
+        <a href="cadastro.html">Criar conta</a>
+      </form>
+    </section>
+  </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const f = document.getElementById('login'); if (f) f.reset();
+    });
+  </script>
+</body>
+</html>

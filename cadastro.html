@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechLMR · Criar Conta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="auth-wrap">
+    <section class="auth-box">
+      <div class="logo">Tech<span>LMR</span></div>
+      <h1 class="auth-title">Criar conta</h1>
+      <p class="auth-sub">Leva menos de 1 minuto</p>
+      <form class="form" action="cadastro.php" method="POST" autocomplete="off">
+        <input class="input border" type="text" name="nome" placeholder="Seu nome completo" required>
+        <input class="input border" type="email" name="email" placeholder="Seu e-mail" required>
+        <input class="input border" type="password" name="senha" placeholder="Crie uma senha" required>
+        <button class="btn btn-primary" type="submit">Cadastrar</button>
+        <a href="index.html">Já tenho conta</a>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
